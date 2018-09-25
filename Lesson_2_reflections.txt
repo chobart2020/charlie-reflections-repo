@@ -1,0 +1,37 @@
+What happens when you initialize a repository? Why do you need to do it?
+a .git folder containing the repository’s metadata is created. I need to do it to create a git repository so I can find the files in the directory where the repo was created.
+
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+In the staging area you can add and remove files before you commit it. The value of the staging area is that one can pick and choose which files should be included in the commit, and changes in other files could be included with the new commit so they aren’t mixed up with a previous one, so you could have a logical “bookmark”
+to continue working off of.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+add only the updated files which contain the change you want to include in the staging area commit, so that when you git commit, only the files you chose are committed, and other files can be added to the commit later.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+If I’m working on a program and I want to make a change that may or may not work, I can either merge my branch with the master branch or get rid of it completely.
+
+
+How do the diagrams help you visualize the branch structure?
+It’s presenting a visual structure of what the branches are, so I get a better understanding of what it actually is.
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+They merge into one branch, and the commits of the two branches are in chronological order, the merging branches would be seen as one path, along with the commits.
+
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+Automatically:
+pros: happens automatically if different parts of the same file were changed in two or more different branches so its a simple process of putting them together into one file
+cons: may not be saved at a logical point in your work
+
+Manually:
+pros: can merge different branches at a logical checkpoint when working
+cons: hard to remember to merge files often
